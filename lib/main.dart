@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:project1/colors.dart';
 import 'package:project1/pages/page1.dart';
+import 'package:project1/pages/page2.dart';
+import 'package:project1/pages/page3.dart';
+import 'package:project1/pages/page4.dart';
 import 'package:project1/pages/title_page.dart';
+import 'package:project1/widgets/arc_picture.dart';
 
 
 void main() {
@@ -16,7 +20,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
      // theme: darkTheme,
       debugShowCheckedModeBanner: false,
-      home: page1()
+      home: arcPicture()
       
     );
     

@@ -6,14 +6,14 @@ import 'package:project1/fonts/para_font.dart';
 
 import '../colors.dart';
 
-class page1 extends StatefulWidget {
-  const page1({super.key});
+class page2 extends StatefulWidget {
+  const page2({super.key});
 
   @override
-  State<page1> createState() => _page1State();
+  State<page2> createState() => _page2State();
 }
 
-class _page1State extends State<page1> {
+class _page2State extends State<page2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,7 +30,7 @@ class _page1State extends State<page1> {
                   children: [ 
                         DotsIndicator(
                                   dotsCount: 5,
-                                  position: 0,
+                                  position: 1,
                                   decorator: const DotsDecorator(
                                     size: Size(12.5, 12.5),
                                     activeSize: Size(12.5, 12.5),
@@ -41,9 +41,9 @@ class _page1State extends State<page1> {
                         
                     
                     SizedBox(height: 10,),
-                    mainFont(text: "Flying private has never been easier",fontSize: 25,),
+                    mainFont(text: "Books the whole plane or just seats you need",fontSize: 25,),
                     SizedBox(height: 10,),
-                    paraFont(text: "Whether it’s your first time or you’re a private aviation aficionados, COJET makes it easy to access the options that you need.",),
+                    paraFont(text: "COJET offers multiple ways to buy including private charter, individual seats on private jets and flexible options in between."),
                     SizedBox(height: 25,),
                     
                     

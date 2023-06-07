@@ -3,17 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:project1/background.dart';
 import 'package:project1/fonts/main_font.dart';
 import 'package:project1/fonts/para_font.dart';
-
 import '../colors.dart';
 
-class page1 extends StatefulWidget {
-  const page1({super.key});
+class page3 extends StatefulWidget {
+  const page3({super.key});
 
   @override
-  State<page1> createState() => _page1State();
+  State<page3> createState() => _page3State();
 }
 
-class _page1State extends State<page1> {
+class _page3State extends State<page3> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,7 +29,7 @@ class _page1State extends State<page1> {
                   children: [ 
                         DotsIndicator(
                                   dotsCount: 5,
-                                  position: 0,
+                                  position: 2,
                                   decorator: const DotsDecorator(
                                     size: Size(12.5, 12.5),
                                     activeSize: Size(12.5, 12.5),
@@ -41,9 +40,9 @@ class _page1State extends State<page1> {
                         
                     
                     SizedBox(height: 10,),
-                    mainFont(text: "Flying private has never been easier",fontSize: 25,),
+                    mainFont(text: "Allow location services",fontSize: 25,),
                     SizedBox(height: 10,),
-                    paraFont(text: "Whether it’s your first time or you’re a private aviation aficionados, COJET makes it easy to access the options that you need.",),
+                    paraFont(text: "You need to allow location services to receive deals near you.",),
                     SizedBox(height: 25,),
                     
                     
@@ -55,7 +54,28 @@ class _page1State extends State<page1> {
                         Container(
                           
                         width: 270,
-                        height: 40,
+                        height: 50,
+                        decoration: BoxDecoration(
+                          color: Colors.transparent,
+                          borderRadius: BorderRadius.circular(12),
+                          border: Border.all(color: Colors.white,strokeAlign: BorderSide.strokeAlignCenter,width: 2.0)
+                        ),
+                      ),
+                      Container(
+                        
+                        child: mainFont(text: "Allow", fontSize: 20,)),
+                        
+                      ],
+                      
+                    ),
+                     SizedBox(height: 20,),
+                    Stack(
+                      alignment: Alignment.center,
+                      children: [
+                        Container(
+                          
+                        width: 270,
+                        height: 50,
                         decoration: BoxDecoration(
                           gradient: goldWhiteGradient,
                           borderRadius: BorderRadius.circular(12)

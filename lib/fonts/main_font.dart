@@ -8,10 +8,13 @@ import 'package:project1/colors.dart';
 
 class mainFont extends StatelessWidget {
   final String text;
+  double fontSize;
+
   
 
   mainFont({super.key,
-          this.text = "Flying private has never been easier",
+          required this.text, 
+          required this.fontSize 
           });
 
   @override
@@ -25,8 +28,8 @@ class mainFont extends StatelessWidget {
            text,
             style: GoogleFonts.poppins(
               textStyle: TextStyle(
-                fontSize: 25,
-                fontWeight: FontWeight.bold
+                fontWeight: FontWeight.bold,
+                fontSize: 25
                 
               )
 

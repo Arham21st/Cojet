@@ -11,7 +11,7 @@ class paraFont extends StatelessWidget {
   
 
   paraFont({super.key,
-          this.text = "Whether it’s your first time or you’re a private aviation aficionados, COJET makes iteasy to access the options that you need.",
+          required this.text,
           });
 
   @override
